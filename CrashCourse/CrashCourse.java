@@ -157,15 +157,16 @@ public class CrashCourse { // class header ALWAYS PascalCase
         }
         // printing values of an array with iteration 
         double[] arry = {5.1, 2.2, 5.3, 3.4, 8.5};
-        System.out.println(arry);
+        System.out.println("Memory address: " + arry);
         for (int i = 1; i < arry.length; i ++) { 
-            System.out.println(arry[i]);
-        }
+            System.out.println(arry[i]); }
+
         int[][] arryMatrix = { {0, 32, 12}, {7, 13, 22}, {6, 77, 100} };
-        for(int row = 0; row  < arryMatrix.length; row ++);
-           for(int col = 0; col < arryMatrix[row].length;);
-                System.out.println(arryMatrix[row][col] + "");
+        System.out.println(arryMatrix);
+        for(int row = 0; row  < arryMatrix.length; row ++) { 
+            for(int col = 0; col < arryMatrix[row].length; col++) { 
+                System.out.println(arryMatrix[row][col] + " ");
+            }
+        }
     } 
-    System.out.println()
     }
-}
