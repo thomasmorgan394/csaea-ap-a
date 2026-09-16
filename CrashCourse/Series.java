@@ -1,19 +1,20 @@
 package CrashCourse;
 
-public class Series { 
-
-    // Data // atributes 
-String showName;
-String genre;
+public class Series {
+private String showName;
+private String genre;
 int episodes; 
 int seasons;
 String actors;
 String director;
-Double imdbRating;
+private Double imdbRating;
 String qualityOption;
 int numRatings;
-int rate;
+private int rate;
 int episodeOn;
+private boolean isWatching;
+boolean subtitlesEnabled; 
+String dubbedLanguage;
 public Series(String director,String genre,String showName) { 
     this.showName = showName;
     this.director = director;
@@ -21,10 +22,22 @@ public Series(String director,String genre,String showName) {
     imdbRating = 8.0;
     seasons = 3;
     episodes = 24; 
-} 
-    public void finish() {
-         episodes = episodeOn ++;
+    episodeOn = 0;
+
+}
+    public void finishEpisode() {
+        episodeOn = episodeOn ++;
+         System.out.println("You are on episode " + episodeOn);
+        if (episodeOn > episodes) { 
+            episodeOn = 0;
+            seasons ++;
+        }
+            
+
     } 
+    public void isWatching() {
         
 
+
     }
+    } 
