@@ -1,9 +1,9 @@
-package CrashCourse;
+// package CrashCourse;
 
 public class Dog { 
 
     // Data // atributes 
-String name;
+private String name;
 String ownerName;
 int age; 
 int energyLevel;

@@ -1,20 +1,21 @@
-package CrashCourse;
+// package CrashCourse;
 
 public class Series {
-private String showName;
-private String genre;
-private int episodes; 
-int seasons;
-String actors;
-String director;
-private double imdbRating;
-String qualityOption;
-int numRatings;
-private int rate;
-int episodeOn;
-private boolean isWatching;
-boolean subtitlesEnabled; 
-String dubbedLanguage;
+    private String showName;
+    private String genre;
+    private int episodes; 
+    private int seasons;
+    private String actors;
+    private String director;
+    private double imdbRating;
+    private String qualityOption;
+    private int numRatings;
+    private int rate;
+    private int episodeOn;
+    private boolean isWatching;
+    private boolean subtitlesEnabled; 
+    private String dubbedLanguage;
+
 public Series(String director,String genre,String showName) { 
     this.showName = showName;
     this.director = director;
@@ -29,7 +30,7 @@ public Series(String director,String genre,String showName) {
 }
     public void rateSeries(double newRating) { 
         if (newRating >= 0 && newRating <= 10) { 
-            this.imdbRating = newRating;
+            imdbRating = newRating;
             System.out.println(showName + "rating is now updated to" + imdbRating);
         }   else { 
             System.out.println("This is an invalid rating! Please make your rating between 0-10" );
@@ -50,9 +51,9 @@ public Series(String director,String genre,String showName) {
          }
         }
     public void toggleWatchState() {
-        this.isWatching = !this.isWatching;
+        isWatching = !isWatching;
     }
     public void updateGenre(String newGenre) {
-        this.genre = newGenre;
+        genre = newGenre;
     }
     } 
