@@ -1,3 +1,4 @@
+import module java.base;
 public class Series {
     private String showName;
     private String genre;
@@ -55,3 +56,27 @@ public class Series {
         genre = newGenre;
     }
 }
+Series s1 = new Series("Christopher Nolan", "Sci-fi", "Inception series");
+Series s3 = new Series("Michael Schur", "Comedy", "The good place");
+Series s4 = new Series("Duffer Brothers", "fiction", "Stranger things");
+Series s5 = new Series('Greg Daniels", "Comedy", "The office");
+Series s5 = new Series("Greg Daniels", "Comedy", "The office");
+s1.showName;
+s1.genre;
+s1.seasons;
+s1.actors;
+s1.director;
+s1.imdbRating;
+s1.qualityOption;
+s1.rate;
+s1.episodeOn;
+s1.isWatching;
+s1.subtitlesEnabled;
+s1.dubbedlanguage;
+s1.dubbedLanguage;
+s1.rateSeries(9.2);
+s2.finishEpisode();
+s2.finishEpisode();
+s2.finishEpisode();
+s3.toggleWatchState();
+s4.updateGenre("Sci-Fi / Drama");
