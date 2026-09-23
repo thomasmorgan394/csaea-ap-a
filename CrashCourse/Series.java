@@ -18,7 +18,7 @@ public class Series {
         this.showName = showName;
         this.director = director;
         this.genre = genre;
-        this.imdbRating = 8.0;
+        this.imdbRating = 7.0;
         this.seasons = 3;
         this.episodes = 24; 
         this.episodeOn = 0;
@@ -49,6 +49,7 @@ public class Series {
 
     public void toggleWatchState() {
         isWatching = !isWatching;
+        System.out.println("Your watch state is now changed");
     }
 
     public void updateGenre(String newGenre) {
