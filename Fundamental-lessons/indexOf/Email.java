@@ -31,7 +31,13 @@ public class Email {
     public String getUser() {
         return address.substring(0,address.indexOf("@"));
     }
+    public String getFirstName() {
+        return address.substring(0, address.indexOf("."));//might use get indexOf 
+    }
 
+    public String changeDomain(String newDomain) { 
+        return this.getUser() + "@" + newDomain;
+    }
     // getDomain
 
     public String getDomain() {
