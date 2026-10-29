@@ -57,7 +57,8 @@ public class Email {
     public boolean isStaffFormat(){
         return ((this.toString().indexOf("hcvsd.org") != -1) && (this.toString().indexOf(".")) != -1);
     }
-
+    // Equals() method
+    
     // ===== CHALLENGE 1 =====
 // Method name: getFirstName
 // School addresses are formatted first.last@cuny.edu
