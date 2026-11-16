@@ -36,7 +36,10 @@ public class Robot {
      public boolean isOn() {
         return isOn;
      }
-
+   public void randomDrain(){ 
+      double drain = Math.random() * 10;
+      battery = Math.max(0, battery - drain); 
+     }
      // SETTERS / MUTATORS: void, PARAMETER receives an ARGUEMENT
      public void setName(String newName) {
         name = newName;
