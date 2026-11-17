@@ -37,8 +37,47 @@ public class NativeArrays {
                 System.out.println("Index " + i + "-> value" + nums[i]);
         }
 
+       // ===== 5. ENHANCED FOR LOOP =====
+       for (int taco: nums) { 
+            System.out.println(" enhanced value " + taco);
+       }
+        // Challenge 1: Double It
+        // Multiply every element by 2, then print the array.
+        int[] challengeOne = {3, 7, 1, 9, 4};
+        // TODO: your loop here
+        int[] challengeOnes = {3, 7, 1, 9, 4};
+        for (int i = 0; i < challengeOne.length; i++) { 
+            challengeOne[i] *= 2;
+            System.out.println(Arrays.toString(challengeOne));
+        }
+        // Challenge 2: Every Other
+        // Use i += 2 to add 10 to only the elements at even indexes, then print.
+        int[] challengeTwo = {3, 7, 1, 9, 4};
+        // TODO: your loop here
+        for (int i = 0; i < challengeTwo.length; i += 2) { 
+            challengeTwo [i] += 10;
+        }
+        // Challenge 3: Replace Negatives
+        // Change every negative number to 0, then print.
+        int[] temps = {5, -3, 8, -1, 0, -7};
+        // TODO: your loop here
+        // HINTS: use an if statement in each pass of the loop
+        // redefine element value like this: nums[2] = 6;
+        int[] scoring = {85, 62, 97, 45, 70, 99};
+        for (int i = 0; i < scores.length; i++) {
+            scores[i] = Math.min(scores[i] + 5, 100);
+        }
+        System.out.println(Arrays.toString(scores));
 
-
+        int[] highTemps = {58, 71, 64, 80, 77, 69};
+        int highest = highTemps[0];
+        int highestIndex = 0;
+        for (int i = 0; i < highTemps.length; i++) { 
+            highest = Math.max(highest, highTemps[i]);
+            if (highTemps[i] == highest) {
+                highestIndex = i;
+            }
+        }
 
 
 
