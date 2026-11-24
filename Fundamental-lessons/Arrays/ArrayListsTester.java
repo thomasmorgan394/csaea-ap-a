@@ -18,5 +18,9 @@ public class ArrayListsTester {
 
         ArrayLists.numberUtilities();
 
+        ArrayLists.membershipCheck(animals);
+        ArrayLists.copyList();
+        
+
     }
 }
